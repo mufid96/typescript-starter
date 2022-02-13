@@ -1,0 +1,26 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: typescript
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: typescript
+  template:
+    metadata:
+      labels:
+        app: typescript
+    spec:
+      containers:
+      - name: typescript
+        image: neromorph/typescript:latest
+        ports:
+          - name: access
+            containerPort: 3000
+        volumeMounts:
+        - name: typescript-home
+          mountPath: /var/typescript_home
+      volumes:
+      - name: typescript-home
+        emptyDir: { }

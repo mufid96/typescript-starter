@@ -1,0 +1,12 @@
+Feb 13, 2022 1:52:24 PM hudson.remoting.jnlp.Main createEngine
+INFO: Setting up agent: typescript
+Feb 13, 2022 1:52:24 PM hudson.remoting.jnlp.Main$CuiListener <init>
+INFO: Jenkins agent is running in headless mode.
+Feb 13, 2022 1:52:24 PM hudson.remoting.Engine startEngine
+INFO: Using Remoting version: 4.11.2
+Feb 13, 2022 1:52:24 PM org.jenkinsci.remoting.engine.WorkDirManager initializeWorkDir
+INFO: Using /home/mufid/projects/typescript-starter/remoting as a remoting work directory
+Feb 13, 2022 1:52:24 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: WebSocket connection open
+Feb 13, 2022 1:52:24 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Connected
