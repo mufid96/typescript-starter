@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Git') {
       steps {
-        git(url: 'git@github.com:neromorph/typescript-starter.git', branch: 'master', changelog: true)
+        git(url: 'https://github.com/neromorph/typescript-starter.git', branch: 'master', changelog: true)
       }
     }
 
