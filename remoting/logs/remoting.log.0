@@ -10,3 +10,31 @@ Feb 13, 2022 1:52:24 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: WebSocket connection open
 Feb 13, 2022 1:52:24 PM hudson.remoting.jnlp.Main$CuiListener status
 INFO: Connected
+Feb 13, 2022 3:24:19 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Write side closed
+Feb 13, 2022 3:24:19 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Read side closed
+Feb 13, 2022 3:24:19 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Read side closed
+Feb 13, 2022 3:24:19 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Terminated
+Feb 13, 2022 3:24:19 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: http://localhost:32000/login is not ready: 503
+Feb 13, 2022 3:24:19 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: Read side closed
+Feb 13, 2022 3:24:35 PM hudson.remoting.jnlp.Main$CuiListener status
+INFO: http://localhost:32000/login is not ready: 503
+Feb 13, 2022 3:24:46 PM hudson.remoting.Engine lambda$new$1
+SEVERE: Uncaught exception in Engine thread Thread[Thread-0,5,main]
+java.lang.NoClassDefFoundError: jenkins/slaves/restarter/JnlpSlaveRestarterInstaller
+	at jenkins.slaves.restarter.JnlpSlaveRestarterInstaller$FindEffectiveRestarters$1.onReconnect(JnlpSlaveRestarterInstaller.java:91)
+	at hudson.remoting.EngineListenerSplitter.onReconnect(EngineListenerSplitter.java:54)
+	at hudson.remoting.Engine.runWebSocket(Engine.java:687)
+	at hudson.remoting.Engine.run(Engine.java:496)
+Caused by: java.lang.ClassNotFoundException: jenkins.slaves.restarter.JnlpSlaveRestarterInstaller
+	at java.base/java.net.URLClassLoader.findClass(URLClassLoader.java:476)
+	at hudson.remoting.RemoteClassLoader.findClass(RemoteClassLoader.java:215)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:589)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:522)
+	... 4 more
+
