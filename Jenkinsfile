@@ -27,8 +27,8 @@ pipeline {
     stage('Deploy') {
       steps {
         sh 'kubectl create -n typescript'
-        sh 'kubectl apply -f typescript-deployment.yaml -n typescript'
-        sh 'kubectl apply -f typescript-service.yaml -n typescript'
+        sh 'kubectl apply -f k8s/typescript-deployment.yaml -n typescript'
+        sh 'kubectl apply -f k8s/typescript-service.yaml -n typescript'
       }
     }
 
