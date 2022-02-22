@@ -26,7 +26,7 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh 'kubectl create namespace typescript'
+        sh 'kubectl create namespace typescript --dry-run=client -o yaml | kubectl apply -f -'
         sh 'kubectl apply -f k8s/typescript-deployment.yaml -n typescript'
         sh 'kubectl apply -f k8s/typescript-service.yaml -n typescript'
       }
