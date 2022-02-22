@@ -26,7 +26,15 @@ pipeline {
 
     stage('Deploy') {
       steps {
-        sh 'kubectl create -n typescript'
+        sh 'kubectl create namespace typescript'
+        sh 'kubectl apply -f k8s/typescript-deployment.yaml -n typescript'
+        sh 'kubectl apply -f k8s/typescript-service.yaml -n typescript'
+      }
+    }
+
+    stage('Done') {
+      steps {
+        echo 'Selesai!'
       }
     }
 
